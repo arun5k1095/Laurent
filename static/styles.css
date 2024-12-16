@@ -1,13 +1,124 @@
+/* Use a modern geometric sans-serif font */
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600&display=swap');
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f8f9fa;
+    font-family: 'Nunito Sans', 'Helvetica Neue', Arial, sans-serif;
+    background: #f3f4f6;
+    color: #2f2f2f;
+    line-height: 1.6;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 h1 {
-    color: #343a40;
+    color: #1f2937;
+    font-size: 2.5em;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+
+p, li {
+    font-size: 1.1em;
+    margin-bottom: 1em;
+    color: #4b5563;
 }
 
 code {
-    font-size: 1.1em;
-    color: #d63384;
+    font-family: 'Fira Code', Consolas, monospace;
+    font-size: 0.95em;
+    color: #e11d48; /* Slightly more vibrant pink */
+    background: #f9fafb;
+    padding: 3px 6px;
+    border-radius: 4px;
+}
+
+a {
+    color: #2563eb;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #1e40af;
+    text-decoration: underline;
+}
+
+.container {
+    max-width: 800px;
+    background: #ffffff;
+    margin: 40px auto;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    padding: 40px;
+}
+
+h2, h3, h4, h5, h6 {
+    color: #1f2937;
+    font-weight: 400;
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+ul, ol {
+    padding-left: 20px;
+}
+
+.button {
+    display: inline-block;
+    background: #3b82f6;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-size: 1em;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.button:hover {
+    background: #2563eb;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.1);
+}
+
+.header, .footer {
+    text-align: center;
+    padding: 20px;
+    color: #6b7280;
+    font-size: 0.9em;
+    margin-top: 30px;
+}
+
+.header {
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.footer {
+    border-top: 1px solid #e5e7eb;
+    margin-bottom: 40px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #e5e7eb;
+    border-radius: 6px;
+    font-size: 1em;
+    margin-bottom: 20px;
+    color: #111827;
+    background: #f9fafb;
+}
+
+input:focus, textarea:focus {
+    border-color: #3b82f6;
+    outline: none;
+    background: #ffffff;
+    box-shadow: 0 0 0 3px rgba(59,130,246,0.2);
 }
